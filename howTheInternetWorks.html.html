@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+
+  <title> But How? </title>
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <script src="typed/js/typed.js"></script>
+
+<!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+
+
+  <script>
+  //var aString = "Boblabla's Lawblog"
+  $(function(){
+      $("#scribbleSpot").typed({
+        strings: ["Ever wondered how the internet works?.", "This page tells the story of its own journey to your laptop screen.^1000", "Get ready for a wild ride around the internet.", "How this Page Gets to You"],
+        typeSpeed: 0, cursorChar: ""
+      });
+  });
+  // nothing is arbitrary, or everything is
+  </script>
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
+
+</head>
+<body>
+
+  <header id="main-header" class="side-menu">
+    <nav>
+      <ul>
+        <li class="active"><a href="#How"><span>How this Page Gets to You</span></a></li>
+        <li><a href="#first"><span>From Your Click</span></a></li>
+        <li><a href="#second"><span>Section 2</span></a></li>
+        <li><a href="#third"><span>Section 3</span></a></li>
+        <li><a href="#fourth"><span>Parsing</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <style>
+
+  #How {
+    background-image: url("http://wikiwebpedia.com/wp-content/uploads/javascript.gif");
+    height: 800px;
+    }
+
+  #main-header, #How
+  {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  section
+  {
+left: 50%;
+ align-self: center;
+padding-top: 150px;
+background-color: #f42819;
+
+  }
+
+p{
+  text-align: left;
+  font-size: 19px;
+}
+
+pre{
+  width: 500px;                          /* specify width  */
+	white-space: pre-wrap;                 /* CSS3 browsers  */
+	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+	white-space: -pre-wrap;                /* Opera 4 thru 6 */
+	white-space: -o-pre-wrap;              /* Opera 7 and up */
+	word-wrap: break-word;                 /* IE 5.5+ and up */
+	/* overflow-x: auto; */                /* Firefox 2 only */
+	/* width: 99%; */		       /* only if needed */
+}
+
+  </style>
+
+  <main>
+    <section id="How">
+      <center>
+      <div class="inner">
+        <h1 id = "scribbleSpot" ></h1>
+      </div>
+    </center>
+    </section>
+
+    <section id="first">
+
+      <div class="inner">
+        <h2>From Your Click</h2>
+        <pre>
+          <p>
+                    For whatever reason, you click on a link to this website or type its name into your url and hit enter.
+                     When you do this, the computer translates this into radio waves and sends those radio waves to a wireless (wifi) router. The router interprets this radio wave as a request for a certain url.
+          Now, the router the mailman doesn’t know a bunch <a id="fnr.1" name="fnr.1" class="footref" href="#fn.1" data-fn-id="1">3</a>.
+           He doesn’t know what you need to know, but he knows somebody who does. He sends a radio signal to a Domain Name Server. The Domain Name Server is the phonebook of the internet. See, every computer connected to the internet has an IP address.
+           IP addresses are like house addresses, they tell you where you need to go. A typical IP address looks like this: 216.27.61.137 (even this is simplified from the real IP address name which is in binary, the true name for this IP address is: 11011000.00011011.00111101.10001001.) Unfortunately, 216.27.61.137 just isn’t that catchy a name.
+           That’s why we have urls, so that our feeble human minds can navigate the internet with relative ease. It’s the Domain Name Server’s job to explain which IP address goes with which url. Fun fact: the first Domain Name Server, back in 1983, was just a text file. You could just map out the internet in one text file. So it’s the Domain Name Server’s job to match the url to the correct IP address.
+           Sometimes the Domain Name Server doesn’t know and has to ask another DNS for help. Chaching means that a DNS remembers the IP address for a site.
+</p>
+</pre>
+
+      </div>
+
+    </section>
+
+    <section id="second">
+      <div class="inner">
+        <h2>Section 2</h2>
+<pre>
+<p>
+  The DNS sends the info back to the router. Now that the router has the right IP address, it knows the correct server to contact. Then the router chops the data up and packages it into data packets. These data packets are of about 1500 bytes each. A single byte hold enough data to store one letter.
+  Each one of these packets gets sent either through copper cables or fiber optic cables that send messages in pulses of light or through wireless connections which use radio waves, or satellites. They go from one router to another router to another router. For reference, just one Google search uses about 1000 computers in its 3000 mile circuit to get your information and get back.
+  The request is likely sent in different parts along different routes. There are different routes through the internet, different routes through the internet.
+</p>
+</pre>
+      </div>
+    </section>
+
+    <section id="third">
+      <div class="inner">
+        <h2>Section 3</h2>
+<pre>
+        <p>
+          Despite it’s big job in the presidential election, servers are misunderstood. A server is basically a big library of webpages and data. When it gets the request, it searches itself for what you requested. Each backslash in the title is like telling it to look at a different section of the library. It searches the library until it finds exactly the book that you’re looking for. But this isn’t a regular library. No. Because the server can’t just hand you the book. It would be like a library if instead of mailing you the book you wanted, the librarian tore out every page of the book and sent each page to you individually for you to reassemble once it arrived. That’s what the server does, it sends the html file in data packets. This is the same as how the url got sent.
+          So this newly chopped up html page gets sent back to you all those miles through all those different computers. It probably doesn’t take the same route that your request did.
+        </p>
+      </pre>
+      </div>
+    </section>
+
+
+
+
+    <section id="fourth">
+      <div class="inner">
+        <h2>On Your Screen</h2>
+<pre>
+        <p>
+          Go through the page and translates it into a tree. Then it turns this tree into a different tree. Then it goes up the tree, bit by bit, and paints it onto the screen.
+          And that is how you get your cat memes.
+        </p>
+    </pre>  </div>
+    </section>
+
+    <!-- footnote definitions -->
+    <div id="text-footnotes">
+      <div class="footdef">
+        <sup>
+          <a id="fn.1" class="footnum" href="#fnr.1">1</a>
+        </sup>
+        <p> The router is basically just a guy who tells everyone where they need to go. </p>
+      </div>
+    </div>
+
+  </main>
+
+  <ul id="demos-nav">
+    <li><a href="https://danielfrancisolivieri.github.io/" target="_blank">More by me</a></li>
+
+  </ul>
+
+  <script src="menuspy.js"></script>
+  <script>
+    var elm = document.querySelector('#main-header');
+    var ms = new MenuSpy(elm);
+  </script>
+</body>
+</html>
