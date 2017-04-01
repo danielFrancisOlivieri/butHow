@@ -16,14 +16,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="w3.css">
 
 
   <script>
   //var aString = "Boblabla's Lawblog"
   $(function(){
       $("#scribbleSpot").typed({
-        strings: ["Ever wondered how the internet works?.", "This page tells the story of its own journey to your laptop screen.^1000", "Get ready for a wild ride around the internet.", "How this Page Gets to You"],
+        strings: [ "This page tells the story of its own journey to your laptop screen^1000", "Get ready for a wild ride around the internet", "How this Page Gets to You"],
         typeSpeed: 0, cursorChar: ""
       });
   });
@@ -41,23 +41,42 @@
   <header id="main-header" class="side-menu">
     <nav>
       <ul>
-        <li class="active"><a href="#How"><span>How this Page Gets to You</span></a></li>
-        <li><a href="#first"><span>From Your Click</span></a></li>
-        <li><a href="#second"><span>Section 2</span></a></li>
-        <li><a href="#third"><span>Section 3</span></a></li>
-        <li><a href="#fourth"><span>Parsing</span></a></li>
+      <li class="active"><a href="#zeroth"><span>How this Page Gets to You</span></a></li>
+        <li><a href="#first"><span>The Internet</span></a></li>
+        <li><a href="#second"><span>From Your Click</span></a></li>
+        <li><a href="#third"><span>Routers</span></a></li>
+        <li><a href="#fourth"><span>Travelling in Style</span></a></li>
       </ul>
     </nav>
   </header>
 
   <style>
 
-  #How {
+body
+{
     background-image: url("http://wikiwebpedia.com/wp-content/uploads/javascript.gif");
-    height: 800px;
-    }
+}
 
-  #main-header, #How
+  #header {
+margin-top: 0px;
+padding-top: 0px;
+     height: 1000px;
+background-color: #f42819;
+    }
+    html, body {
+
+margin:0;
+
+padding:0;
+
+}
+#scribbleSpot
+{
+font-size: 32px;
+margin-top: 70px;
+}
+
+  #main-header, #How, h2
   {
     color: white;
     text-shadow:
@@ -71,25 +90,48 @@
   {
 left: 50%;
  align-self: center;
-padding-top: 150px;
-background-color: #f42819;
+padding-top: 50px;
+
 
   }
 
 p{
   text-align: left;
   font-size: 19px;
+padding: 30px;
+text-indent: 50px;
 }
 
-pre{
-  width: 500px;                          /* specify width  */
-	white-space: pre-wrap;                 /* CSS3 browsers  */
-	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
-	white-space: -pre-wrap;                /* Opera 4 thru 6 */
-	white-space: -o-pre-wrap;              /* Opera 7 and up */
-	word-wrap: break-word;                 /* IE 5.5+ and up */
-	/* overflow-x: auto; */                /* Firefox 2 only */
-	/* width: 99%; */		       /* only if needed */
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ text-align: left;
+ width: 900px;
+ position: sticky;
+ align-self: center;
+}
+
+.panel
+{
+
+  color: black;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 10%;
+    margin-right: 10%;
+   width: 700;
+  /*  border: 3px solid black; */
+    padding: 10px;
+
+align-self: center;
+}
+
+.link
+{
+  color: #0645AD;
 }
 
   </style>
@@ -119,6 +161,7 @@ pjb \___________/
 -->
 
   <main>
+    <!--
     <section id="How">
       <center>
       <div class="inner">
@@ -126,67 +169,101 @@ pjb \___________/
       </div>
     </center>
     </section>
+-->
+
+<!-- Header -->
+  <section id="zeroth">
+<div class="w3-container w3-red w3-center w3-padding-128" id = "header">
+  <h1 class=" w3-jumbo"> <span class="label label-primary"> How this Page Gets to You </span> </h1>
+<!--  <p class="w3-xlarge">A Website About Itself </p> -->
+
+
+<div id = "scribbleSpot">
+
+
+
+
+</div>
+
+</div>
+</section>
 
     <section id="first">
 
-      <div class="inner">
+    <!--  <div class="inner"> -->
         <h2>From Your Click</h2>
-        <pre>
-          <p>
-                    For whatever reason, you click on a link to this website or type its name into your url and hit enter.
-                     When you do this, the computer translates this into radio waves and sends those radio waves to a wireless (wifi) router. The router interprets this radio wave as a request for a certain url.
-          Now, the router the mailman doesn’t know a bunch <a id="fnr.1" name="fnr.1" class="footref" href="#fn.1" data-fn-id="1">3</a>.
-           He doesn’t know what you need to know, but he knows somebody who does. He sends a radio signal to a Domain Name Server. The Domain Name Server is the phonebook of the internet. See, every computer connected to the internet has an IP address.
-           IP addresses are like house addresses, they tell you where you need to go. A typical IP address looks like this: 216.27.61.137 (even this is simplified from the real IP address name which is in binary, the true name for this IP address is: 11011000.00011011.00111101.10001001.) Unfortunately, 216.27.61.137 just isn’t that catchy a name.
-           That’s why we have urls, so that our feeble human minds can navigate the internet with relative ease. It’s the Domain Name Server’s job to explain which IP address goes with which url. Fun fact: the first Domain Name Server, back in 1983, was just a text file. You could just map out the internet in one text file. So it’s the Domain Name Server’s job to match the url to the correct IP address.
-           Sometimes the Domain Name Server doesn’t know and has to ask another DNS for help. Chaching means that a DNS remembers the IP address for a site.
-</p>
-</pre>
+<div class = "panel">
+<p>
+  When you clicked on the link to this page, the slight press of your finger on the your mouse set in motion a journey all the way to Ashburn, Virginia and back. Specifically, to an office building on 1506 Moran Rd. You can see the destination right <a href="https://www.google.com/maps/place/1506+Moran+Rd,+Sterling,+Virginia,+United+States/@38.9944161,-77.4472427,3a,75y,283.9h,78.67t/data=!3m6!1e1!3m4!1se-Ww_awkO0tIk-jbw9tepg!2e0!7i13312!8i6656!4m2!3m1!1s0x0:0x78916f038ca500cb!6m1!1e1" target="_blank"> <span class = "link"> here <span> </a>. Your request was spliced up into different data packets. Each one of these packets took a different route to California, hoping from one computer to the next for hundreds of miles. When your request arrived at its destination, a server selected this exact page as the one you had ordered. Then, the server cut up this page into little bits and sent it back the way it came. Hundreds of computers likely participated in the effort to search for, find, and retrieve the words you are reading now. Radio waves ferried your data from computer to computer at a rate of 300,000 km per second.
+And all of this happened in a second or two.
+The internet has been designed exactly so that we do not notice the absurdly complex mechanisms that make it possible.  The radio waves, the {number of computers}, the incomprehensible information stashed away in a far away place, these are all hidden from us. This is because the internet is designed to be used, not to be marvelled at.
+The only time the internet draws attention to itself is when it fails. When the internet is working it appears to be at our command, but when it fails we realize that we are actually at its mercy. There are 404 errors and spotty wifi connections. It’s in moments like these that the internet seems to have no mercy. Unlike other technology to rely on, we cannot see the internet. There is not a flat tire to replace, a nail to hammer in, or a cog to grease. There is not even a physical object to touch. In his interview with Bill Moyers, Joseph Campbell said, “Computers are like old testaments God, lots of rules and no mercy.” This metaphor hold especially true for the internet. It is everywhere yet cannot be seen anywhere. It is capable of miracles, but also capable of unexplained cruelty. Much like God, it ostensibly connects us by in practice only seems to divide us into our separate camps.
+This website is here to undeify the internet. We are going on this journey together. If you are using Google Chrome, right-click anywhere on the screen. Select “inspect” from the options that appear. A bar should appear. Click on it’s edge and pull it across to expand it. This is the html code that produces the page you are seeing right now. I’ve put in an ascii drawing of a rabbit destroying the world. You can do this inspecting the element for every page on the internet. These are the innards of the pages that you see displayed pristine before you. All the internet does is ferry around these jumbles of characters to all the places that request them. Take some time on this if you want. Explore the underbelly of this webpage. If you end up messing up the webpage, that’s nothing to worry about. The page will return to its original state if you reload it.
+       </p>
+</div>
 
-      </div>
+
+    <!--  </div> -->
 
     </section>
 
     <section id="second">
-      <div class="inner">
-        <h2>Section 2</h2>
-<pre>
-<p>
-  The DNS sends the info back to the router. Now that the router has the right IP address, it knows the correct server to contact. Then the router chops the data up and packages it into data packets. These data packets are of about 1500 bytes each. A single byte hold enough data to store one letter.
-  Each one of these packets gets sent either through copper cables or fiber optic cables that send messages in pulses of light or through wireless connections which use radio waves, or satellites. They go from one router to another router to another router. For reference, just one Google search uses about 1000 computers in its 3000 mile circuit to get your information and get back.
-  The request is likely sent in different parts along different routes. There are different routes through the internet, different routes through the internet.
-</p>
-</pre>
-      </div>
+
+        <h2>From Your Click</h2>
+        <div class = "panel">
+        <p>
+          The process of events begins who you click on a link or hit enter on a search. When you click on a link that says google.com your computer sends that message to its wireless adapter. This chip inside of the computer takes the string of characters “google.com” and translates it into radio waves. But how does English to radio wave translation work? First, the url is broken down into binary. Radio waves are waves like those at the beach, they go up and they go down. Radios send signals by changing how fast these waves go. You start at the peak of one wave and then record how long it takes for the next one to come. One wave might take a second to go from one peak to the next. Another wave might take have a second to go from peak to peak. The speed of a wave is its frequency. Higher frequency means it’s capable of transferring more data. By assigning different characters to different frequencies, we can turn radio frequencies into a language. The brilliance of this technique is that the radio waves work as both the messenger and the message. This language of radio waves scurries around as constantly, invisibly and illegible to us humans.
+ </p>
+        </div>
+
     </section>
 
     <section id="third">
-      <div class="inner">
-        <h2>Section 3</h2>
-<pre>
+
+        <h2>Routers</h2>
+        <div class = "panel">
         <p>
-          Despite it’s big job in the presidential election, servers are misunderstood. A server is basically a big library of webpages and data. When it gets the request, it searches itself for what you requested. Each backslash in the title is like telling it to look at a different section of the library. It searches the library until it finds exactly the book that you’re looking for. But this isn’t a regular library. No. Because the server can’t just hand you the book. It would be like a library if instead of mailing you the book you wanted, the librarian tore out every page of the book and sent each page to you individually for you to reassemble once it arrived. That’s what the server does, it sends the html file in data packets. This is the same as how the url got sent.
-          So this newly chopped up html page gets sent back to you all those miles through all those different computers. It probably doesn’t take the same route that your request did.
-        </p>
-      </pre>
-      </div>
+          Fortunately, there are routers that are literate in the language of radio waves. Routers are considered computers, but are nothing like a laptop or desktop. They have no screen and often have several antennae poking out of them. These routers are the traffic intersections of the internet. It is by establishing a radio signal connection with a router that a computer can connect to the internet at large. The job of the routers is to make sure information goes where it is intended to go. They are like the train stations of the internet.
+Once the router receives the radio waves, it has the name “google.com” but this isn’t enough. It needs to have the address of the website. The addresses of website are known as IP addresses. For example, the IP address of Google’s homepage is 172.217.6.174. Copy that and put it into your url search bar. It will take you there. Unfortunately, the name 172.217.6.174 is not easy for people to remember. This is where the DNS comes in. A Domain Name Server or DNS is the yellow pages of the internet. It’s job is to match every url to its IP address. When it gets a signal from the router, it starts to search for matching IP address. If the DNS can find the correct IP address, it will send that back. If it cannot find the right IP address, which is most of the time, the DNS will ask another DNS for help. If even then it can’t find the IP address, it will send back an error message.
+The IP address works like a building’s address. It informs the router where the web page is stored. Equipped with the IP address, the router’s next job is to ask the server at the specified IP address for the web page. The message asking for a web page is known as an HTTP GET request.
+A request looks like this: </p>
+
+<code>
+  GET / HTTP/1.1
+  Host: erbosoft .com
+  Connection: keep-alive
+  Cache-Control: max-age=0
+  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36
+  Accept-Encoding: gzip,deflate,sdch
+  Accept-Language: en-US,en;q=0.8
+  If-Modified-Since: Tue, 07 Feb 2012 04:44:06 GMT
+
+
+</code>
+<p>
+Before it sends the message, though, the router packs the message up into one or more data packets. Each data packet is a maximum 1500 bytes. Each byte contains one character. Because HTTP GET requests are so small, they usually fit into just one data packet. Now that the HTTP GET request is in a package, the router can send it on the way to the server.
+     </p>
+        </div>
+
     </section>
 
 
 
 
     <section id="fourth">
-      <div class="inner">
-        <h2>On Your Screen</h2>
-<pre>
+
+        <h2>Travelling in Style</h2>
+        <div class = "panel">
         <p>
-          Go through the page and translates it into a tree. Then it turns this tree into a different tree. Then it goes up the tree, bit by bit, and paints it onto the screen.
-          And that is how you get your cat memes.
-        </p>
-    </pre>  </div>
+          There are three fashionable ways for data packets to travel: copper, optic cables, or satellites. But these signals don’t go straight to their destination. They couch crash on different routers along. They can use upwards of 15 routers for a single data packet. For reference, just one Google search uses about 1000 computers in its 3000 mile circuit to get your information and get back.
+
+The internet has traffic jams in the same way that high ways do. This is not much of a problem, because data packets will simply avoid jams when they see them. This both makes the data packet get to its destination quicker and does not exacerbate the problem of the congested area.
+           </p>
+        </div>
     </section>
 
-    <!-- footnote definitions -->
+    <!-- footnote definitions
     <div id="text-footnotes">
       <div class="footdef">
         <sup>
@@ -195,7 +272,7 @@ pjb \___________/
         <p> The router is basically just a guy who tells everyone where they need to go. </p>
       </div>
     </div>
-
+ -->
   </main>
 
   <ul id="demos-nav">
