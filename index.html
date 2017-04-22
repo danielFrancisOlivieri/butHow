@@ -12,7 +12,7 @@
     <title>Code</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrapModified.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
@@ -22,23 +22,24 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+<!-- for tooltip -->
 
-  <!--   stuff for snipplets    -->
-  <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
-  <script type="text/javascript" src="https://rawgit.com/opal/opal-cdn/gh-pages/opal/0.9.2/opal.min.js"></script>
-  <script type="text/javascript" src="https://rawgit.com/opal/opal-cdn/gh-pages/opal/0.9.2/opal-parser.min.js"></script>
-  <script src="snipplets-master/src/snipplets.js"></script>
-<!--  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/ruby/ruby.min.js"></script> -->
+
+<link rel="stylesheet" href="hint.css/hint.css"></link>
 
 </head>
 
 <style>
 
-p
+.col-lg-12
 {
-  text-indent: 50px;
+   text-indent: 50px;
   text-align: left;
 
+}
+.hint--rounded
+{
+  text-indent: 0px;
 }
 #firstText
 {
@@ -47,6 +48,39 @@ p
   padding: 30px;
 }
 
+
+
+.tooltiptext {
+
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+
+    /* Position the tooltip */
+
+    width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltiptext
+{
+  visibility: hidden;
+  background-color: red;
+  color: red;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+h2
+{
+  text-align: center;
+}
 </style>
 
 <body id="page-top" class="index">
@@ -92,7 +126,11 @@ p
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <h1 class="name">Start Bootstrap</h1>
+                      <div class = "tooltip">
+                    <h1 class="name">Start Bootstrap</h1>
+                    <span class="tooltiptext">Tooltip text</span>
+
+                  </div>
                         <hr class="star-light">
                         <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
                     </div>
@@ -111,7 +149,7 @@ p
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 text-center" id = "firstText">
+                <div class="col-lg-12" id = "firstText">
 
                   <p>
 
@@ -119,7 +157,7 @@ p
 
                   </p>
                   <p>
-	This simplicity, however, requires vast complexity. You can pull back the curtain and see this complexity yourself. If you right click on Google’s homepage and select “View Page Source” you’ll get a new tab. Backstage you’ll see that the simple Google homepage is held in place by an entire novella of code (42,707 words to be exact). There are brackets, hashtag signs and long strands of letters that don’t even merit an attempt at pronunciation. To most people, myself included, this looks to be somewhere between gibberish and gobbledygook. Paradoxically, it’s this stuff that seems like nonsense that functions with the utmost order and precision.
+	This simplicity, however, requires vast complexity. You can pull back the curtain and see this complexity yourself. If you right click on Google’s homepage and select “View Page Source” you’ll get a new tab. Backstage you’ll see that the simple Google homepage is held in place by an entire novella of code (42,707 words to be exact). There are <span class = "hint--top hint--rounded"  aria-label = "{brackets}"  style="display:inline;"  > brackets,  </span> hashtag signs and long strands of letters that don’t even merit an attempt at pronunciation. To most people, myself included, this looks to be somewhere between gibberish and gobbledygook. Paradoxically, it’s this stuff that seems like nonsense that functions with the utmost order and precision.
 </p>
 <p>
 
@@ -161,29 +199,7 @@ Computer programs in general and webpages in particular have been designed so th
 
             </div>
 
-<!-- first snipplet -->
-<textarea class="snipplet" data-responder-id="react">
 
-function Test({ text }) {
-  return <div onClick={() => alert(text)}>Greetings</div>
-};
-
-<Test text="Why Hello There!"/>
-
-&lt;/textarea>
-```
-
-Here is the snipplet above in action!
-    </textarea>
-
-<textarea class="snipplet" data-responder-id="react">
-
-function Test({ text }) {
-  return <div onClick={() => alert(text)}>Greetings!</div>
-}
-
-<Test text="Why Hello There!"/>
-</textarea>
 
         </div>
     </section>
