@@ -39,10 +39,9 @@ $(document).ready(function() {
 
   $(".img-responsive").click(function(index){
 
-for (i =0; i <3; i++)
-{
-      $(".appender").append("<img class='img-responsive' src='img/magic.PNG' alt=''>");
-}
+$("#magicPic").attr("src","img/cake.png");
+    //  $(".appender").append("<img class='img-responsive' src='img/magic.PNG' alt=''>");
+$("#pictureId").attr("aria-label","I'm cake");
 
 
   });
@@ -58,7 +57,7 @@ $( "#adaPic" ).tooltip({ content: '<img src="/img/ada.jpg" />' });
 
 <style>
 
-p
+p, ol
 {
    text-indent: 50px;
   text-align: left;
@@ -166,8 +165,8 @@ h2
             <div class="row">
 
                 <div class="col-lg-12">
-<span class = "hint--top"  aria-label = "I'm a magician"  style="display:inline;"  >
-                    <img class="img-responsive" src="img/magic.PNG" alt="">
+<span id = "pictureId" class = "hint--top"  aria-label = "I'm a magician"  style="display:inline;"  >
+                    <img  id = "magicPic" class="img-responsive" src="img/magic.PNG" alt="">
                   </span>
                     <div class="intro-text">
 
@@ -282,7 +281,7 @@ jgs '.___.\   _.--;'`)
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Hello World</h2>
+                    <h2>In the Beginning</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -291,20 +290,18 @@ jgs '.___.\   _.--;'`)
 
                   <p>
                     In 1833, you could go to a dinner party in London and hear the sound of computation. It would be a click-click-clicking sound. Number discs would spin in place, gears would churn against each other, and all of it powered by a hand crank. The device was about two feet high. It would be doing two things: adding and subtracting. It was the first mechanical calculator.
-      	This machine, called the Difference Engine, was devised in 1843 by British mathematician Charles Babbage. While Babbage <span class = "hint--top hint--rounded"  aria-label = "The British government cut his funding when the project was half done and ten times over budget"  style="display:inline;" > never managed to produce a full version </span> but he did manage to produce a partial one. Over a decade before Lincoln came to office, Babbage was beginning to tackle the problem that would lead to the computer you have in front of you right now. What this problem was the mechanization of thought. For millions of years, humanity had risen above the animals by outsourcing functions of its body to tools. Legs became improved by the wheel, endurance hunting became improved by the bow and arrow. But now, Babbage was creating a machine that could take over humanity’s power to think. This machine does with gears and cranks what humans do with neural synapses.
+      	This machine, called the Difference Engine, was devised in 1843 by British mathematician Charles Babbage. While Babbage <span class = "hint--top hint--rounded"  aria-label = "The British government cut his funding when the project was half done and ten times over budget."  style="display:inline;" > never managed to produce a full version </span> but he did manage to produce a partial one. Over a decade before Lincoln came to office, Babbage was beginning to tackle the problem that would lead to the computer you have in front of you right now. What this problem was the mechanization of thought. For millions of years, humanity had risen above the animals by outsourcing functions of its body to tools. Legs became improved by the wheel, endurance hunting became improved by the bow and arrow. But now, Babbage was creating a machine that could take over humanity’s power to think. This machine does with gears and cranks what humans do with neural synapses.
       </p>
       <p>
-      With all of its complexity and shrewd design, Babbage could teach a machine to do something a seven year-old can do. The advantage that this machine has over your average first grader is speed. It would require several school districts worth of children to match this machine’s speed at addition and subtraction. By adding and subtracting again and again this machine could find the value of polynomial functions.
-      	But while this Difference Engine can compute things, it is not a computer in the modern sense. It is not a computer because it does not take directions. It is build for just the one purpose. The only way to reprogram it would be to take it apart and build it all over again.
+        This machine, called the Difference Engine, was devised in 1843 by British mathematician Charles Babbage. Babbage was the son of an abusive London banker and had learned algebra entirely on his own as an adolescent. In his adulthood, Babbage would spend hours checking published tables of polynomial calculations for their accuracy. The inspiration for his Difference Engine was to create a machine that would calculate functions without human error. While Babbage never managed to produce a full version (the government cut his funding when he was ten times over budget) but he did manage to produce a partial one. Over a decade before Lincoln came to office, Babbage was beginning to tackle the problem that would lead to the computer you have in front of you right now. What this problem was the mechanization of thought. For millions of years, humanity had risen above the animals by outsourcing functions of its body to tools. Legs became improved by the wheel, endurance hunting became improved by the bow and arrow. But now, <span class = "hint--top hint--rounded"  aria-label = "Babbage also invented the cow-catcher, multi-colored theater lighting, a seismic detector among other things"  style="display:inline;" >Babbage</span> was creating a machine that could take over humanity’s power to think. This machine does with gears and cranks what humans do with neural synapses.
+
       </p>
       <p>
-      	The intellectual jump required to imagine programming hinged on a party. It was a garden party where Charles Babbage met a seventeen year old mathematician named Ada Lovelace . The daughter of <span class = "hint--top hint--rounded"  aria-label = "Yes, that lord Byron"  style="display:inline;" > Lord Byron, </span> Ada Lovelace was fantastically educated. She was fascinated with Babbage’s Difference Engine and became close colleague with Charles Babbage.
-      Together, they translated a paper on computing into English from Italian. But in addition to just translating it, they also added notes. In these notes lies the DNA of coding languages such as JavaScript and C++. What Ada Lovelace did was write out a list of instructions. If followed, these instructions could lead a machine to hypothetically calculate Bernoulli numbers. What was revolutionary about this was the idea of communicating with a machine. You could tell one machine to do many different tasks for you if only you taught it how to listen.
+      	The invention of programming hinged on a party. It was a garden party where Charles Babbage met a seventeen year old mathematician named Ada Lovelace . The daughter of <span class = "hint--top hint--rounded"  aria-label = "Yes, that lord Byron"  style="display:inline;" > Lord Byron, </span>, Ada Lovelace described herself as an “Analyst (& Metaphysician).” She was fascinated with Babbage’s Difference Engine and became close colleague with Charles Babbage.
+      Together, they translated a paper on computing into English from Italian. But in addition to just translating it, they also added notes. In these notes lies the intellectual DNA of coding languages such as JavaScript and C++. What Ada Lovelace did was write out a list of instructions. If followed, these instructions could lead a machine to hypothetically calculate Bernoulli numbers. What was revolutionary about this was the idea of communicating with a machine. You could tell one machine to do many different tasks for you if only you taught it how to listen.
     </p>
     <p>
-      	That list of instructions was the first computer program. Unfortunately, Ada Lovelace wrote it a century before the first computer. But not only did Ada Lovelace invent the beginnings of programming, she also had the vision to see where it might go. Ada Lovelace considered the possibility that computers could one day produce graphics or music. That’s right. Back in the mid 1800s Ada Lovelace was already envisioning techno.
-      About this theoretical device known as the Analytical Engine, Ada Lovelace wrote, “...there is no finite line of demarcation which limits the powers of the Analytical Engine.” Now, over a century and a half later, 18 million programmers wake up every weekday and prove Ada’s statement correct. Things are different now. Duties once assigned to metal discs are now given to electrons. The essential idea is the same though: teach machines. By writing new code, they keep pushing that line further and showing that there is yet more that machines can be taught to do. And now you are going to join them in that.
-
+      About this theoretical device known as the Analytical Engine, Ada Lovelace wrote, “...there is no finite line of demarcation which limits the powers of the Analytical Engine.” Now, over a century and a half later, 18 million programmers wake up every weekday and prove Ada’s statement correct. Things are different now. Duties once assigned to metal discs are now given to electrons. By writing new code, they keep pushing that line further and further. With every line of code they show that there is yet more that machines can be taught to do.
                       </p>
 
 
@@ -314,6 +311,55 @@ jgs '.___.\   _.--;'`)
             </div>
 
 
+
+        </div>
+    </section>
+
+    <!-- social Implications   -->
+
+    <section id="socialImplications">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Impact</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 textBox" id = "eighthText">
+
+    <p>
+      Thanks to Ada Lovelace, it took me months to find out about Brad Pitt and Angelina Jolie’s break-up. You see, I usually only pay attention to celebrity gossip when the celebrity gossip has me cornered. This only ever happens when I am standing in the checkout line at the grocery store. The tabloid magazines gleam, hoping to get my spare attention. And when I’m in line, I have attention to spare. The magazine covers inform me of where various celebrities are on the merry-go round of marriage, pregnancy, and divorce.
+    </p>
+    <p>
+
+      	But I haven’t had much time to read these magazine covers lately because I haven’t spent much time in grocery store check-out lines. Now my grocery store has a cohort of computer screens that let me check myself out. There’s no need for lines, no time for magazine covers, and no anxiety over how I will interact with the cashier.
+      	Of course, I accept my fate of being behind on Brad and Angelina’s relationship. The slightly larger problem is that cashiers are becoming obsolete.
+      </p>
+      <p>
+      	Computers are swallowing professions right and left. Automated cars are threatening to push truckers off the road. FDA approved medical devices are already administering anesthetic. Automated telemarketers are right now annoying as many people as the telephone system will allow.
+      	With our future likely being written in code, it makes sense to increase Computer Science training in high schools. Ironically, the opposite is happening. “Introductory secondary school computer science courses have decreased in number by 17 percent from 2005. The number of Advanced Placement (AP) Computer Science Courses has similarly decreased by 33 percent.” Computer Science is the only STEM field that has seen a decrease in high school participation in the last 20 years (from 25% to 19%). This is why it’s more important than ever that people become comfortable with code.
+      </p>
+      <p>
+
+      Most people not interested in programming could not look at a computer program and have any sense of what it does. It would be a jumble of letters and brackets and numbers all squashed together in lines. Code would be no less legible if it were written in cyrillic.
+      For example, let’s look at this code:
+    </p>
+    <iframe
+      style="width: 100%; height: 300px"
+      src="http://jsfiddle.net/danielFrancisOlivieri/h4JXs/5719/embedded/js,html,result/">
+    </iframe>
+
+      <p>
+      GAAAA! What do the parenthesis mean? And what about the hashtag symbols? And why are there two plus signs in a row after the i? And what’s with all of those curly brackets? This is where the separation between cause and effect begins. It begins with just how complex and alien the code looks. Now it’s time to dive in and try to familiarize ourselves with these alien symbols.
+
+    </p>
+
+
+              </div>
+
+
+            </div>
 
         </div>
     </section>
@@ -345,55 +391,19 @@ jgs '.___.\   _.--;'`)
                 A computer program is like Calvin. You might think, "I know what I mean! It's obvious what I really meant." Computers do not follow what you meant to say. they follow what you said. And they will follow what you said no matter how disastrous the consequences (this kind of mistake is known as a logic error). This means that if you tell a computer program to run forever, it will do its best to run forever. If you <span class = "hint--top hint--rounded"  aria-label = "this is pretty common"  style="display:inline;" > accidentally tell your computer to delete your memory </span> then it will do just that.
 
               </p>
+              <p>The best computer programming starts on paper. Before you start telling the computer what to do, you want to decide what you want it to do. It often helps to come up with a list of instructions.
+	For example, if Calvin in the comic above were a computer program, you might write the instructions:
+</p>
+<ol>
+<li>Go up stairs </li>
+<li>Sit in bath </li>
+<li>Turn on water</li>
+<li>Turn off water when tub is full</li>
+</ol>
 
               <p>
                 Computer programming is essentially translation. It starts with an idea in your head and ends with the idea sitting in the computer’s processor as binary code. Now, binary doesn’t exactly <span class = "hint--top hint--rounded"  aria-label = "Here’s Hamlet’s most famous line written in Binary: 01110100 01101111 00100000 01100010 01100101 00100000 01101111 01110010 00100000 01101110 01101111 01110100 00100000 01110100 01101111 00100000 01100010 01100101"  style="display:inline;" > flow off the tongue </span>. This is where programming languages come in. You translate your idea into code and run the program. Then the computer starts a game of very precise whisper down the lane. It translates the JavaScript into another language. Then it translates that into yet another language. With each level it gets more and more complex, further from <span class = "hint--top hint--rounded"  aria-label = "Just about every popular programming langauge is written in English"  style="display:inline;" > English </span> and closer to Binary. In some programming languages this happens all at once before the program runs. In others, this happens as the program runs. JavaScript, the language we're going to use, goes line by line.
               </p>
-
-            </div>
-
-
-        </div>
-
-
-
-
-    </div>
-</section>
-
-
-<!-- beginning of explaination section   -->
-
-<section id="thirdSection">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Variables</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 textBox" id = "fourthText">
-
-              <p>
-The sentence, “There is a person called Ada” can be translated into this Javascript:
-              </p>
-<pre>
-var aPerson = “Ada”;
-</pre>
-            <p>  The first word, <code>var</code>  just tells the computer that you want it to make a brand-new variable. The word, <code>aPerson</code> is the variable where the name will be stored. This variable can be any collection of letters. You could name a variable splurbek or nudfasdaesd or even sens. I don’t recommend you do, though, because none of those variable names quite make sense. The equals sign says, “Make the variable on the left equal whatever is on the right.” We all know that <code>“Ada”</code> is the name of the first programmer. The semicolon at the end is just like a period. It lets the program know that the sentence is over.
-            </p>
-            <p>
-              There are many different types of variables. Variables can be filled with numbers too. You can do arithmetic with them.
-          </p>
-          <pre>
-            var six = 6;
-var two = 2;
-var eight = six + two; // addition
-var four = six -  two; // subtraction
-var twelve = six * two; // multiplication
-var three = six / two; // division
-          </pre>
 
             </div>
 
@@ -460,6 +470,48 @@ Everything in between the /* and the */ is a comment. This means it will be igno
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
+                <h2>Variables</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 textBox" id = "fourthText">
+
+              <p>
+
+The sentence, “There is a loser called Clyde” can be translated into this Javascript like this:
+              </p>
+<pre>
+var aLoser = “Clyde”;
+</pre>
+            <p>  The first word, <code>var</code>  just tells the computer that you want it to make a brand-new variable. The word, <code>aLoser</code> is the <span class = "hint--top hint--rounded"  aria-label = "Variable names have to be one word"  style="display:inline;" >variable </span> where the name will be stored. This variable can be any collection of letters. You could name a variable splurbek or nudfasdaesd or even sens. I don’t recommend you do, though, because none of those variable names quite make sense. The equals sign says, “Make the variable on the left equal whatever is on the right.” We all know that <code>“Clyde””</code> is the name of the first programmer. The semicolon at the end is just like a period. It lets the program know that the sentence is over.
+            </p>
+            <p>
+              Variables can be filled with numbers too. You can do arithmetic with them.
+          </p>
+          <pre>
+var six = 6;
+var two = 2;
+var eight = six + two; // addition
+var four = six -  two; // subtraction
+var twelve = six * two; // multiplication
+var three = six / two; // division
+          </pre>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+<!-- beginning of explaination section   -->
+
+<section id="thirdSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <h2>Functions</h2>
                 <hr class="star-primary">
             </div>
@@ -468,7 +520,7 @@ Everything in between the /* and the */ is a comment. This means it will be igno
             <div class="col-lg-12 textBox" id = "sixthText">
 
               <p>
-                One of the most important things about programming is a Henry David Thoreau quote, “Simplify, simplify.” Functions allow you to simplify code by separating the cause from the effect. Here is the code for the function append.
+                One of the most important things about programming is a Henry David Thoreau quote, “Simplify, simplify.” Functions allow you to simplify code by separating the cause from the effect. Here is the code for the function <code>append</code>.
               </p>
 <pre>
   append: function() {
@@ -485,11 +537,12 @@ Everything in between the /* and the */ is a comment. This means it will be igno
 </p>
 
 <pre>
-$("#whereWeWantItToGo").append(“Clyde is a medoicre magician”);
+var goodRiddance = "Just like that dove you used in your act, I'm never coming back.";
+ $("#placeForText").append(goodRiddance);
 </pre>
 
 <p>
-Let’s break this apart. What does the dollar sign mean? It means that we are using a special version of Javascript, called jQuery. The “#whereWeWantItToGo" is the name of the place we want the word to go. “Append” is the name of what function we want to happen. aPerson is what we want it to set.
+Let’s break this apart. What does the dollar sign mean? It means that we are using a special version of Javascript, called jQuery. The “#whereWeWantItToGo" is the name of the place we want the word to go. <code>Append</code> is the name of what function we want to happen. aPerson is what we want it to set.
 </p>
 <p>
   And there you have it. No need to even glance at the previous gobbledegook. Yes, it is the gobbledegook that causes all of this to happen, but we’re not worried about the causes. We’re only concerned with the effect.
@@ -497,7 +550,13 @@ Let’s break this apart. What does the dollar sign mean? It means that we are u
 
 <p>
 	It’s with functions that programming really begins to feel like wizardry. The thing about functions is that they help programmers separate cause from effect. This makes programming more simple because it gives the programmer less to worry about.
+  Now let's look at a working example:
 </p>
+
+<iframe
+  style="width: 100%; height: 300px"
+  src="http://jsfiddle.net/danielFrancisOlivieri/h4JXs/5720/embedded/js,html,result/">
+</iframe>
 
             </div>
 
@@ -507,43 +566,6 @@ Let’s break this apart. What does the dollar sign mean? It means that we are u
     </div>
 </section>
 
-
-<!-- back to translation   -->
-
-<section id="translation">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Back to Translation</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 textBox" id = "seventhText">
-
-<p>
-                So now that we know about variables, comments, functions and so on, let’s go back to the phrase we wanted to translate.
-</p>
-<p>
-<code>  Here is how I feel about Clyde.
-  When someone clicks the button, please write out how I feel about Clyde in the space below. </code>   </p>
-  <p>
-    Now that we know everything we do know, hopefully the next part will make more sense. Click on the "Results" tab to test the code out for yourself. You can also click on the "edit in JSFiddle" button in the top right. That will pop open a new tab. In the new tab you will be able to change the code however you like. After you change it, hit the "run" button and see how things change. Don't be discouraged if you accidentally break everything. Accidentally breaking everything is what most programmers do all day.
-  </p>
-  <br>
-
-
-  <iframe
-    style="width: 100%; height: 300px"
-    src="http://jsfiddle.net/danielFrancisOlivieri/h4JXs/5720/embedded/js,html,result/">
-  </iframe>
-          </div>
-
-
-        </div>
-
-    </div>
-</section>
 
 <!-- loops  -->
 
@@ -588,29 +610,20 @@ Maybe you have a higher tolerance for rabbit bites than I do. Feel free to go ov
     </div>
 </section>
 
-<!-- social Implications   -->
 
-<section id="socialImplications">
+<section id="thirdSection">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Impact</h2>
+                <h2>Conclusion</h2>
                 <hr class="star-primary">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 textBox" id = "eighthText">
-
+            <div class="col-lg-12 textBox" id = "seventhText">
 <p>
-  The project of mechanizing cognition, started by Ada Lovelace and Charles Babbage, is now consuming professions. Even worse, thanks to Ada Lovelace, it took me months to find out about Brad Pitt and Angelina’s break-up. You see, I usually only pay attention to celebrity gossip when the celebrity gossip has me cornered. The primary time when celebrity gossip has me cornered is when I am standing in the checkout line at the grocery store. The tabloid magazines gleam, hoping to get my attention. And when I’m in line, I have attention to spare. It’s then, waiting for my turn at the miniature conveyor belt, that I catch up on celebrity gossip. The magazine covers inform me of where various celebrities are on the merry-go round of marriage, pregnancy, and divorce.
-</p>
-<p>
-  	But I haven’t had much time to read these magazine covers because I haven’t spent much time in grocery store check-out lines. Now my grocery store has a cohort of computer screens for me to check-out on. There’s no need for lines, no time for magazine covers, and no anxiety over how I will interact with the cashier. With these computers, the cashiers are becoming obsolete.
-  </p>
-  <p>
-  	But the problem isn’t that cashiers are becoming obsolete, but that humans are. Variables and loops may seem harmless on the screen, but they are swallowing professions right and left. Automated cars are threatening to push truckers off the road. FDA approved medical devices are already administering anesthetic. Automated telemarketers are right now annoying as many people as they can.
-  	With our future likely being written in code, it makes sense to increase Computer Science training in high schools. Ironically, the opposite is happening. “Introductory secondary school computer science courses have decreased in number by 17 percent from 2005. The number of Advanced Placement (AP) Computer Science Courses has similarly decreased by 33 percent.” Computer Science is the only STEM field that has seen a decrease in high school participation in the last 20 years (from 25% to 19%).
 
+Now, this has not exactly been an exhaustive course in Computer Science. There are still two or three more things you’d need to get the hang of before MIT offers you an honorary doctorate. The importance however, is to tie the effect to the cause. When you see Google fetching web results for you, when your character in Super Smash Brothers Brawl gets knocked off the stage, when you hear the ding of your alarm, you can think of this. Think of the variables with their spaceless names, think of the functions with their parentheses, think of the comments let by frustrated programmers. For all the poise and glibness it may present, each computer has a tumult of code beneath it.
 </p>
 
 
@@ -621,6 +634,8 @@ Maybe you have a higher tolerance for rabbit bites than I do. Feel free to go ov
 
     </div>
 </section>
+
+
 
     <!-- About Section -->
     <section class="success" id="about">
@@ -644,6 +659,10 @@ Maybe you have a higher tolerance for rabbit bites than I do. Feel free to go ov
                     </p>
                     <p>
 Babbage, Charles, and Henry P. Babbage. Babbage's Calculating Engines Being a Collection of Papers Relating to Them ; Their History and Construction. Cambridge: Cambridge UP, 2010. Print.
+                    </p>
+
+                    <p>
+"Stephen Wolfram." Stephen Wolfram Blog RSS. Stephen Wolfram, 10 Dec. 2015. Web. 25 Apr. 2017.
                     </p>
                 </div>
 
